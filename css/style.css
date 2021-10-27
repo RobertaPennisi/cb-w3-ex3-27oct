@@ -79,6 +79,7 @@ header .flex-container .flex-item{
 .hobbies .flex-container{
     display: flex;
     justify-content:space-between;
+    align-items: center;
 }
 .hobbies .flex-container .flex-item{
     width: 20%;
@@ -120,6 +121,9 @@ footer a{
 }
 .darkestMode{
     background-color: #1b1b1b;
+    color: #fff;
+}
+.titles{
     color: #fff;
 }
 .light{
