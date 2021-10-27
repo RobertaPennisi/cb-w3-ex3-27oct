@@ -1,0 +1,149 @@
+/*global rules*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    display: block;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: #3a3a3a;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    color: #3a3a3a;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    line-height: 70px;
+    padding-bottom: 30px;
+    color: #3a3a3a;
+    margin: 0;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    line-height: 50px;
+    padding-bottom: 20px;
+    color: #3a3a3a;
+}
+
+/*header settings*/
+header{
+    background-color: #fff;
+    padding: 10px 0;
+    margin: 0 auto;
+}
+header img {
+    margin: 0 auto;
+}
+
+header .flex-container{
+    display: flex;
+    justify-content:space-between;
+}
+header .flex-container .flex-item{
+    width: 300px;
+    padding: 20px 100px;
+    text-align: center;
+}
+
+/*sezione competenze*/
+#competenze {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 100px 50px;
+    text-align: left;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+}
+
+/*sezione vantaggi*/
+#hobbies{
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 100px 50px;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+}
+#hobbies .flex-container{
+    display: flex;
+    justify-content:space-between;
+}
+#hobbies .flex-container .flex-item{
+    width: 20%;
+    text-align: center;
+}
+#hobbies .flex-container .flex-item:first-child{
+    width:100%; 
+    text-align: left;
+    padding-right: 30px;
+}
+
+/*footer settings*/
+footer{
+    background: #000;
+    padding: 100px 50px;
+    margin: 0 auto;
+}
+footer p{
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+}
+footer a{
+    color: #fff;
+    text-decoration: underline;
+}
+
+/*da qui inizia la dark mode*/
+
+.darkMode{
+    background-color: #3a3a3a;
+    color: #fff;
+}
+
+
+/*da qui inizia la parte mobile*/
+
+@media all and (max-width:990px){
+    
+    body{
+        font-size: 16px;
+        line-height: 18px;
+    }
+    header img{
+        width: 30px;
+        height: auto;
+        transition: all 1s ease-out;
+    }
+    /*sezione competenze*/
+    #competenze{
+        padding: 50px 20px;
+    }
+    
+    
+    /*sezione hobbies*/
+    #hobbies{
+        padding: 50px 20px;
+    }
+    
+
+    h2{
+        font-size: 24px;
+        padding-bottom: 10px;
+    }
+    
+
+    footer{
+        padding: 50px 20px;
+    }
+    
+}
