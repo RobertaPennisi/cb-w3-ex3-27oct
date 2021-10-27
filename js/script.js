@@ -31,3 +31,6 @@ lightBtn.addEventListener(
     }
 );
 
+const paragraph = document.querySelectorAll("p");
+document.body.onclick = () => console.log(paragraph.length);
+
